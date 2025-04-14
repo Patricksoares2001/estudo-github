@@ -1,2 +1,19 @@
-# estudo-github
-Estudo-github
+name: primeiro-pipeline
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  primeiro-job:
+    name: "Meu primeiro job"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Minha primeira ação"
+        run: echo "hello world !!!"
+
+      - name: "Segunda ação"
+        run: echo "Você criou seu primeiro Workflow"
+        run: echo "Parabéns"
