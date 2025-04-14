@@ -16,13 +16,13 @@ jobs:
 
       - name: "Segunda ação"
         run: |
-         echo "Você criou seu primeiro Workflow"
-         echo "Parabéns"
- segundo-job:
-    name: "instalação do Ambiente NodeJS"
-    runs-on: Ubuntu-latest
+          echo "Você criou seu primeiro Workflow"
+          echo "Parabéns"
+
+  segundo-job:
+    name: "Instalação do Ambiente NodeJS"
+    runs-on: ubuntu-latest
+
     steps:
       - name: "Verificação do NodeJS atual"
         run: node --version
-        
-    
